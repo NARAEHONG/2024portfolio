@@ -216,6 +216,22 @@ ul::after{
     background: url(../img/thank.jpg) no-repeat center top  / cover;
     height: 100vh;
 }
+/* 그라데이션 */
+#Portfolio_outro h1 {
+    width:max-content;
+    background: linear-gradient(90deg, #00BA88 0%, #7E73E6 50%, #FF7356 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700; font-size:30px;
+    animation:txt_ani 3s linear infinite alternate;
+    padding: 30px 0px;
+    margin: 5px 50px;
+    }
+@keyframes txt_ani {
+    0% {background-position-x:0}
+    100% {background-position-x:1000px;}
+    }
 /* ==========================포트폴리오 outro */
 /* ==========================슬라이더 페이지번호 */
 .slider .slick-dots {width:max-content; position:relative !important; margin:0 auto; top:10px;}
